@@ -555,7 +555,22 @@ header {
     transform: scale(1.05);
     transition: 1s ease;
 }
-    
+
+.fourth-icon {
+    display: inline-flex;
+    justify-content: center;
+    border-radius: .5rem;
+    width: 4rem;
+    background-color: rgb(112, 44, 249, 0.1);
+    transition: color 1s ease;
+    transition: all ease 0.3s;
+}
+
+.fourth-icon:hover,
+.fourth-icon:focus {
+  background: rgb(203, 82, 38);
+  transition: all ease 0.3s;
+}
 
 
 
