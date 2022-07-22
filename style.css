@@ -197,6 +197,7 @@ header {
     font-family: 'Outfit', sans-serif;
     font-weight: 900;
     font-size: 5rem;
+    padding-left: 15px;
     margin: 2.5rem;
     transition: transform 0.3s ease;
     transition: color 1s ease;
@@ -575,7 +576,9 @@ header {
 
 
 
-/* Cards Section */
+/* Cards Section - Testimonials */
+
+/* Technologies used */
 
 /* Emploeyee Section */
 
