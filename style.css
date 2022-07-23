@@ -32,9 +32,8 @@ responsive version for mobile */
     font-display: swap;
 }
 
-body, html {
+html {
     height: 100%;
-    background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(192,181,218,1) 60%, rgba(148,187,233,1) 100%); 
     font-family: 'Jost', sans-serif;
     font-size: 16px;
@@ -191,6 +190,14 @@ header {
     margin-top: 3rem;
     width: 250px;
     height: 200px;
+    transition: 1s ease;
+}
+
+.content-center img:hover {
+    -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+    transition: 1s ease;
 }
 
 .hero-logo {
@@ -246,6 +253,7 @@ header {
     color: #fff;
     border-radius: .5rem;
     border-color: #7330F8;
+    background: #7330F8;
     transition: transform 0.3s ease;
     padding: 1rem;
     cursor: pointer;
@@ -256,7 +264,6 @@ header {
     content: "";
     position: absolute;
     opacity: 0.3;
-    background: #7330F8;
     border-radius: inherit;
     width: 100%;
     height: 100%;
@@ -268,14 +275,17 @@ header {
   
 .hero-button:hover {
     transform: translate(2px, 2px);
+    background: #7330F8;
 }
   
 .hero-button:hover::after {
     transform: translate(-3px, -3px);
+    background: #7330F8;
 }
   
 .hero-button:hover::before {
     transform: translate(2px, 2px);
+    background: #7330F8;
 }
 
 /* Download Paragraph */
@@ -333,8 +343,6 @@ header {
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-right: auto;
     margin-left: auto;
-    background: rgb(238,174,202,0.1);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(192,181,218,1) 60%, rgba(148,187,233,1) 100%);
 }
 
 .main-content-second h2 {
