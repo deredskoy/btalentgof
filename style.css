@@ -887,6 +887,25 @@ article h4 {
     flex-wrap: wrap;
 }
 
+.atech-list {
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.atech-list img {
+    display: block;
+    margin-bottom: .5rem;
+    width: 72px;
+    height: 72px;
+}
+
+.js img {
+    border-radius: 7px;
+}
+
 /* Emploeyee Section */
 
 /* Sign-Up Section */
