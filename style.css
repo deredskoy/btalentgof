@@ -120,6 +120,25 @@ header {
     transform: translate(2px, 2px);
 }
 
+@media (max-width: 760px) {
+    .header-content li {
+        display: none;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.7rem;
+    }    
+
+    .content-center p {
+        font-family: 'Jost', sans-serif;
+        line-height: 3rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+}
 
 /* Logo */
 
@@ -614,6 +633,46 @@ header {
   transition: all ease 0.3s;
 }
 
+@media (max-width: 760px) {
+    .content-two {
+        width: 95%;
+        max-width: 100%;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .content-two-three {
+        width: 95%;
+        max-width: 100%;
+        margin-left: 1rem;
+        padding-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .gallery-row {
+        margin-left: 1rem;
+      }
+}
+
+@media (max-width: 1280px) {
+    .content-two {
+        width: 95%;
+        max-width: 100%;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .content-two-three {
+        width: 95%;
+        max-width: 100%;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin-top: 2rem;
+    }
+}
+
 /* Cards Section - Testimonials */
 
 .testimonial-grid {
@@ -770,6 +829,49 @@ article h4 {
 } */
 
 /* Technologies used */
+
+.technologies {
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Jost';
+    font-size: 1.3rem;
+    /* font-weight: 600; */
+    color: #36383b;
+}
+
+.tech-used {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.tech-used h3 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    padding-top: 3rem;
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-left: 0;
+    line-height: 1.2;
+    color: #36383b;
+}
+
+.tech-used-icon {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* Emploeyee Section */
 
