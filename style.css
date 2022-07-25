@@ -938,10 +938,18 @@ article h4 {
     margin-bottom: .5rem;
     width: 72px;
     height: 72px;
+    transition: 1s ease;
 }
 
 .js img {
     border-radius: 7px;
+}
+    
+.atech-list img:hover {
+    -webkit-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    transform: scale(1.10);
+    transition: 1s ease;
 }
 
 /* Sign-Up Section */
