@@ -65,6 +65,15 @@ select {
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Jost';
+    src: url('Jost-Medium.woff2') format('woff2'),
+        url('Jost-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 html {
     height: 100%;
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(192,181,218,1) 60%, rgba(148,187,233,1) 100%); 
@@ -301,6 +310,12 @@ header {
     color: #36383b;
 }
 
+@media screen and (max-width: 760px) {
+    .main-point-2 {
+        font-family: 'Jost', sans-serif;
+    }
+}
+
 .main-point-3 {
     font-family: 'Outfit', sans-serif;
     font-size: 1.3rem;
@@ -416,6 +431,13 @@ header {
     color: #36383b;
 }
 
+@media screen and (max-width: 760px) {
+    .main-content-second h2 {
+        font-family: 'Jost', sans-serif;
+        font-weight: 500;
+    }
+}
+
 .main-content-second p {
     font-family: 'Jost', sans-serif;
     font-size: 1.3rem;
@@ -521,6 +543,13 @@ header {
     margin-left: 0;
     line-height: 1.2;
     color: #36383b;
+}
+
+@media screen and (max-width: 760px) {
+    .content-two h2 {
+        font-family: 'Jost', sans-serif;
+        font-weight: 500;
+    }
 }
 
 .content-two p {
@@ -743,6 +772,8 @@ article h4 {
 @media (max-width: 1280px) {
     .testimonials h3 {
         margin-right: 0px;
+        font-family: 'Jost';
+        font-weight: 500;
     }
 }
 
@@ -878,6 +909,13 @@ article h4 {
     color: #36383b;
 }
 
+@media screen and (max-width: 760px) {
+    .tech-used h3 {
+        font-family: 'Jost';
+        font-weight: 500;
+    }
+}
+
 .tech-used-icon {
     gap: 1.5rem;
     margin-top: 1.5rem;
@@ -936,6 +974,13 @@ article h4 {
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 760px) {
+    .contact-us h2 {
+        font-family: 'Jost';
+        font-weight: 500;
+    }
+}
+
 .contact-us h3 {
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
@@ -946,6 +991,13 @@ article h4 {
     margin-left: 0;
     line-height: 1.2;
     color: #36383b;
+}
+
+@media screen and (max-width: 760px) {
+    .contact-us h3 {
+        font-family: 'Jost';
+        font-weight: 500;
+    }
 }
 
 .contact-us p {
@@ -965,8 +1017,8 @@ footer {
 }
 
 .footer-container {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-left: auto;
@@ -976,24 +1028,44 @@ footer {
 .footer-row {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1rem;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 }
 
 .column-footer {
     margin-bottom: 1rem;
-    flex: 33 auto;
-    width: 33%;
+    flex: 0 0 auto;
+    width: 50%;
     max-width: 100%;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     margin-top: 0;
 }
 
-.column-footer p {
-    margin-top: 1.5rem;
-    margin-left: 0.5rem;
+.column-footer-left {
+    display: inline-flex;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 760px) {
+    .column-footer-left a {
+        display: none;
+    }
+
+    .column-footer-left {
+        align-items: baseline;
+    }
+}
+
+.column-footer, .column-footer-left p {
+    margin-left: 1rem;
     font-family: 'Jost';
     font-size: 1rem;
     color: #fff;
@@ -1021,7 +1093,15 @@ footer {
     line-height: 1.2rem;
 }
 
-@media screen and (max-width: 768px) {
+#logo {
+    margin-bottom: 1.5rem;
+}
+
+#author {
+    font-weight: 500;
+}
+
+/* @media screen and (max-width: 768px) {
     .column-footer:last-child {
         display: none;
     }
@@ -1031,5 +1111,5 @@ footer {
     .column-footer:last-child {
         display: none;
     }
-}
+} */
 
